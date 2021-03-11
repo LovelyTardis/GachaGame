@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa334b556c40d7c45925a2e34f293879, type: 3}
+  m_Name: C10 2s
+  m_EditorClassIdentifier: 
+  charName: Kyaru
+  charImage: {fileID: 21300000, guid: 209a430a1113a374a9daff5b32cb7912, type: 3}
+  charStars: 2
+  charClass: 1
+  hp: 0
+  atk: 0
+  mag: 0
+  defAtk: 0
+  defMag: 0
+  spd: 0
+  skills:
+  - {fileID: 11400000, guid: b47ff2c4dbcace44f932f6325a9235f2, type: 2}
+  - {fileID: 11400000, guid: 0d5aa04b46c41d641abd832c1701d7dd, type: 2}
+  - {fileID: 11400000, guid: f665b9d6c06936d4b97c81cee570bf57, type: 2}
+  - {fileID: 11400000, guid: b13dddf97d7a8e643a18f3430e05e0aa, type: 2}

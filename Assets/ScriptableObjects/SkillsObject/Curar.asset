@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f17428736db0d443bcd41c03b82a577, type: 3}
+  m_Name: Curar
+  m_EditorClassIdentifier: 
+  Name: Curar
+  Description: Cura a alguien (incluso a ti)
+  Cost: 10
+  SkillValue: 10
+  SkillsFather: {fileID: 6870498649522083001, guid: f99d8459010a73f4b95a37f4a242b0ad,
+    type: 3}
+  type: 0

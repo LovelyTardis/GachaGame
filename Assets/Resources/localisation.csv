@@ -1,0 +1,34 @@
+"key","en","es",
+"generic_yes","Yes","Si",
+"generic_no","No","No",
+"generic_accept","Ok!","Vale!",
+"generic_back","Back","Volver",
+"generic_level","Lv.","Nv.",
+"generic_level_long","Level","Nivel",
+"generic_rewards","Rewards","Premios",
+"generic_news","News","Notícias",
+"generic_missions","Missions","Misiones",
+"generic_settings","Settings","Ajustes",
+
+"main_characters","Characters","Personajes",
+"main_souls","Souls","Almas",
+"main_home","Home","Inicio",
+"main_gacha","Gacha","Gacha",
+"main_shop","Shop","Tienda",
+"main_social","Social","Social",
+
+"levelup_leveltext","Level","Nivel",
+"levelup_title","Level up!","Subes de nivel!",
+"levelup_ap","Max AP","AP máx",
+
+"home_events","Events","Eventos",
+"home_play","Play","Jugar",
+
+"char_hp","HP","Vida",
+"char_atk","Atk","Atq",
+"char_mag","Mag","Mag",
+"char_pdef","Phi. Def","Def. Fis",
+"char_mdef","Mag. Def","Def. Mag",
+"char_description","Description","Descripción",
+
+"?","WIP...","WIP..."

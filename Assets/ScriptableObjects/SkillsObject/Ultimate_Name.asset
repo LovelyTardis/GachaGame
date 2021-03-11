@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f17428736db0d443bcd41c03b82a577, type: 3}
+  m_Name: Ultimate_Name
+  m_EditorClassIdentifier: 
+  Name: Ultimate
+  Description: Habilidad definitiva de alguien
+  Cost: 25
+  SkillValue: 50
+  SkillsFather: {fileID: 4292993960963734013, guid: ab9042ce7e50b6548acda3299849760c,
+    type: 3}
+  type: 0
