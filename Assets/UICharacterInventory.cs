@@ -1,28 +1,56 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class UICharacterInventory : MonoBehaviour
 {
+    public static UICharacterInventory charInv;
     public GameObject charactersUnlocked;
-
     public GameObject charactersLocked;
+    
+    public List<Character> allCharacters;
+    public GameObject SlotPrefab;
 
+    public List<SlotCharacter> _allslots;
+    public void Awake()
+    {
+        if (charInv == null)
+            charInv = this;
+        _allslots.Clear();
+        foreach (Character ch in allCharacters)
+        {
+            GameObject slot = Instantiate(SlotPrefab) as GameObject;
+            if (ch.unlocked)
+            {
+                slot.gameObject.transform.SetParent(charactersUnlocked.transform,false);
+            }
+            else
+            {
+                slot.gameObject.transform.SetParent(charactersLocked.transform,false);
+            }
+            SlotCharacter slotChar = slot.GetComponent<SlotCharacter>();
+            slotChar.LoadSlot(ch);
+            _allslots.Add(slotChar);
+        }
+    }
+
+    public void LoadInventory()
+    {
+
+    }
     public void Sort()
     {
-        foreach (UICharacterSlot Slot in charactersUnlocked.GetComponentsInChildren<UICharacterSlot>())
+        foreach (SlotCharacter slotChar in _allslots)
         {
-            if (Slot.locked)
-                Slot.gameObject.transform.SetParent(charactersLocked.transform,false);
+            if (slotChar.character.unlocked)
+            {
+                 slotChar.gameObject.transform.SetParent(charactersUnlocked.transform,false);
+            }
             else
-                Slot.gameObject.transform.SetParent(charactersUnlocked.transform,false);
-        }
-        foreach (UICharacterSlot Slot in charactersLocked.GetComponentsInChildren<UICharacterSlot>())
-        {
-            if (Slot.locked)
-                Slot.gameObject.transform.SetParent(charactersLocked.transform,false);
-            else
-                Slot.gameObject.transform.SetParent(charactersUnlocked.transform,false);
+            {
+                 slotChar.gameObject.transform.SetParent(charactersLocked.transform,false);
+            }
         }
     }
 }

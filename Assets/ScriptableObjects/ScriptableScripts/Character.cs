@@ -12,6 +12,8 @@ public class Character : ScriptableObject
     public Sprite charImage;
     public int charStars;
     public classSelector charClass;
+    [Header("Character Unlocked")]
+    public bool unlocked;
     [Header("Character Stats")]
     public float hp;
     public float atk;

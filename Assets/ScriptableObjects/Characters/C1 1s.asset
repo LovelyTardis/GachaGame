@@ -16,6 +16,7 @@ MonoBehaviour:
   charImage: {fileID: 21300000, guid: baef9d1f6cb94944ab103357b42e55ff, type: 3}
   charStars: 1
   charClass: 1
+  unlocked: 1
   hp: 500
   atk: 20
   mag: 42

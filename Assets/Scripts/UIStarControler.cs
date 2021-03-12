@@ -15,56 +15,36 @@ public class UIStarControler : MonoBehaviour
     public Sprite goldBorder;
     public Sprite silverBorder;
     public Sprite bronzeBorder;
-    public Test CharacterLvl;
+    public SlotCharacter CharacterLvl;
     private int _lvl;
 
     private void Start()
     {
         UpdateStars();
-        UpdateBorder();
     }
 
     void Update()
     {
-        if (_lvl == CharacterLvl.stars)
+        if (_lvl == CharacterLvl.character.charStars)
         {
             return;
         }
 
         UpdateStars();
-        UpdateBorder();
     }
 
     public void UpdateStars()
     {
-        _lvl = CharacterLvl.stars;
+        _lvl = CharacterLvl.character.charStars;
         for (int i = 0; i < stars.Count; i++)
         {
-            if(i < CharacterLvl.stars)
+            if(i < CharacterLvl.character.charStars)
                 stars[i].sprite = ActiveStar;
             else
                 stars[i].sprite = UnactiveStar;
         }
     }
-    public void UpdateBorder()
-    {
-        switch(_lvl)
-        {
-            case 1:
-            case 2:
-                border.sprite = bronzeBorder;
-                break;
-            case 3:
-            case 4:
-                border.sprite = silverBorder;
-                break;
-            case 5:
-                border.sprite = goldBorder;
-                break;
-            default:
-                break;
-        }
-    }
+    
 
   
 }
