@@ -6,7 +6,8 @@ using UnityEngine;
 public class CSVLoader : MonoBehaviour
 {
     public static CSVLoader csv;
-    public bool LanguageEnglish = true;
+    public enum languageSelect { Spanish, English };
+    public languageSelect languageSelected;
     private TextAsset csvFile;
     private char lineSeparator = '\n';
     private char surround = '"';
@@ -14,13 +15,20 @@ public class CSVLoader : MonoBehaviour
 
     private void Awake()
     {
-        if (csv == null) { csv = GameObject.Find("GameManager").GetComponent<CSVLoader>(); }
-        if (LanguageEnglish) { LocalisationSystem.language = LocalisationSystem.Language.English; }
-        else { LocalisationSystem.language = LocalisationSystem.Language.Spanish; }
+        if (csv == null) { csv = GameObject.Find("Localiser").GetComponent<CSVLoader>(); }
+        switch(languageSelected)
+        {
+            case languageSelect.English:
+                LocalisationSystem.language = LocalisationSystem.Language.English;
+                break;
+            case languageSelect.Spanish:
+                LocalisationSystem.language = LocalisationSystem.Language.Spanish;
+                break;
+        }
     }
     public void LoadCSV()
     {
-        csvFile = Resources.Load<TextAsset>("localisation");
+        csvFile = Resources.Load<TextAsset>("localisation"); //Carga el archivo "localisation", donde se encuentran todas las traducciones
     }
     public Dictionary<string, string> GetDictionaryValues(string attributeId)
     {

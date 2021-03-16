@@ -668,7 +668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4989dad6e750ba4388b611715cd54ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  border: {fileID: 3065076913448233746}
   stars:
   - {fileID: 8405739739654636036}
   - {fileID: 8812055635409235716}
@@ -677,9 +676,6 @@ MonoBehaviour:
   - {fileID: 1809218945297625625}
   ActiveStar: {fileID: 21300000, guid: c86c85950f492914ca052c018eaf1a27, type: 3}
   UnactiveStar: {fileID: 21300000, guid: 236909c492d09824886261c9cc829df1, type: 3}
-  goldBorder: {fileID: 21300000, guid: 62ea883bf1b9c0144b30369a038da8cd, type: 3}
-  silverBorder: {fileID: 21300000, guid: 69063093ec092e04fbc0342d0197e51d, type: 3}
-  bronzeBorder: {fileID: 21300000, guid: eeffd5b7f0409454e83171cbcfbdefee, type: 3}
   CharacterLvl: {fileID: 384420377571197829}
 --- !u!1 &5082820816860767870
 GameObject:

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class AssignCharacterText : MonoBehaviour
 {
@@ -10,10 +11,9 @@ public class AssignCharacterText : MonoBehaviour
     public charInfo info;
 
     private TMP_Text text;
-
     private void Start()
     {
-        character = gameObject.GetComponentInParent<Test>().ch;
+        //character = gameObject.GetComponentInParent<Test>().ch;
         text = gameObject.GetComponent<TMP_Text>();
     }
     private void Update()

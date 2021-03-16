@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Player Party
   m_EditorClassIdentifier: 
   Characters:
+  - {fileID: 11400000, guid: f8b477d77782eb046839adbd7cfa503a, type: 2}
   - {fileID: 11400000, guid: 65e830ceace9ddc488e03ac1058713f8, type: 2}
-  - {fileID: 11400000, guid: 724b52a812beea64d949ec8676eb4df7, type: 2}
-  - {fileID: 11400000, guid: 5fc16e6ca7d372848bde2c7b1316a323, type: 2}
-  - {fileID: 11400000, guid: ae5e4ee8cdd62f94b968912d402a1efe, type: 2}
-  - {fileID: 11400000, guid: bead4ae033fc89143b55cc1e56f1fd34, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

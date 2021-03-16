@@ -7,14 +7,10 @@ using UnityEngine.UI;
 
 public class UIStarControler : MonoBehaviour
 {
-    public Image border;
     public List<Image> stars;
     public Sprite ActiveStar;
     public Sprite UnactiveStar;
-
-    public Sprite goldBorder;
-    public Sprite silverBorder;
-    public Sprite bronzeBorder;
+    
     public SlotCharacter CharacterLvl;
     private int _lvl;
 

@@ -29,7 +29,9 @@ public class BorderController : ScriptableObject
       }
       return _border;
    }
-
+   public Sprite SetGoldBorder() { return goldBorder; }
+   public Sprite SetSilverBorder() { return silverBorder; }
+   public Sprite SetBronzeBorder() { return bronzeBorder; }
    public Sprite SetBorder(GameObject go)
    {
       Sprite _border = defaulBorder;

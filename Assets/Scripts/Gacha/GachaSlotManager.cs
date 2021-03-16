@@ -4,14 +4,33 @@ using UnityEngine;
 
 public class GachaSlotManager : MonoBehaviour
 {
-   public List<GameObject> SlotContainer;
-   public GameObject SlotPrefab;
-   public void LoadSlots(List<Character> PullList) // for characters
+   public List<GameObject> slotContainer;
+   public GameObject slotPrefab;
+   [Range(0f,1f)]
+   public float timeSpawn;
+
+   public GameObject backButton;
+   public void LoadSlots(List<Character> pullList) // for characters
    {
-      for (int x = 0; x < PullList.Count; x++)
+      //Esto solo vacia los gameobjects xdd
+      foreach (GameObject slot in slotContainer)
       {
-         GameObject slotCharacter = Instantiate(SlotPrefab, SlotContainer[x].transform, false);
-         slotCharacter.GetComponent<SlotCharacter>();
+         foreach (Transform child in slot.transform)
+         {
+            Destroy(child.gameObject);
+         }
       }
+      StartCoroutine(LoadAllSlots(pullList));
+   }
+
+   IEnumerator LoadAllSlots(List<Character> pullList)
+   {
+      for (int x = 0; x < pullList.Count; x++)
+      {
+         GameObject slotCharacter = Instantiate(slotPrefab, slotContainer[x].transform, false); 
+         slotCharacter.GetComponent<UIGachaSlot>().LoadSlot(pullList[x]);
+         yield return new WaitForSeconds(timeSpawn);
+      }
+      backButton.SetActive(true);
    }
 }

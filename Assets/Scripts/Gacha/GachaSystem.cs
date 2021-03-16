@@ -8,6 +8,6 @@ public abstract class GachaSystem : MonoBehaviour
 {
     public bool guaranteed2Star;
     public bool guaranteed3Star;
-    public abstract void Pull(int nOfPulls);
+    public abstract void OnPull(int nOfPulls);
     
 }

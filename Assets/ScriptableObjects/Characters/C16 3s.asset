@@ -16,6 +16,7 @@ MonoBehaviour:
   charImage: {fileID: 21300000, guid: f95b20908368e7c4991e3d4769b1ae5f, type: 3}
   charStars: 3
   charClass: 2
+  unlocked: 0
   hp: 950
   atk: 7
   mag: 4
@@ -24,6 +25,6 @@ MonoBehaviour:
   spd: 6
   skills:
   - {fileID: 11400000, guid: b47ff2c4dbcace44f932f6325a9235f2, type: 2}
-  - {fileID: 11400000, guid: f665b9d6c06936d4b97c81cee570bf57, type: 2}
+  - {fileID: 11400000, guid: c5e78f5514cb48f46b6182b516f1be33, type: 2}
   - {fileID: 11400000, guid: 0d5aa04b46c41d641abd832c1701d7dd, type: 2}
-  - {fileID: 11400000, guid: b13dddf97d7a8e643a18f3430e05e0aa, type: 2}
+  - {fileID: 11400000, guid: f665b9d6c06936d4b97c81cee570bf57, type: 2}

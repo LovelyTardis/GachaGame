@@ -23,25 +23,4 @@ public class Character : ScriptableObject
     public float spd;
     [Header("Character Skills")]
     public SkillObject[] skills = new SkillObject[4];
-    public void InitializeStats(Test test)
-    {
-        test.stars = charStars;
-        test.hp = hp;
-        test.atk = atk;
-        test.mag = mag;
-        test.defAtk = defAtk;
-        test.defMag = defMag;
-        test.spd = spd;
-        test.cImage.sprite = charImage;
-    }
-    public void ExecuteSkill(int id)
-    {
-        switch (id)
-        {
-            case 1: skills[0].SkillsFather.Effect(); break;
-            case 2: skills[1].SkillsFather.Effect(); break;
-            case 3: skills[2].SkillsFather.Effect(); break;
-            case 4: skills[3].SkillsFather.Effect(); break;
-        }
-    }
 }

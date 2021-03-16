@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void Change(int cosa)
+    public void DisableScene()
     {
-        SceneManager.LoadScene(cosa);
+        SceneManager.UnloadSceneAsync("GachaScene",UnloadSceneOptions.None);
     }
-
+    public void LoadScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
 }

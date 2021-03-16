@@ -20,7 +20,12 @@ public class SlotCharacter : MonoBehaviour
         }
 
     }
-
+    public void LoadForGachaSlot(Character ch)
+    {
+        character = ch;
+        slotImage.sprite = ch.charImage;
+        slotBorder.sprite = bc.SetGoldBorder();
+    }
     public void LoadSlot(Character ch)
     {
         character = ch;
@@ -28,6 +33,7 @@ public class SlotCharacter : MonoBehaviour
         slotBorder.sprite = bc.SetBorder(ch);
         SetSlotColor();
     }
+    
     //ESTO HAY QUE CAMBIARLO YA QUE SOLO PASARA DE LOCKED A UNLOCKED UNA VEZ, NO TIENE PORQUE ESTAR MIRANDOLO TODO EL RATO.
     public void Update()
     {

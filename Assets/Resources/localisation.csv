@@ -1,4 +1,5 @@
 "key","en","es",
+
 "generic_yes","Yes","Si",
 "generic_no","No","No",
 "generic_accept","Ok!","Vale!",
@@ -9,6 +10,10 @@
 "generic_news","News","Notícias",
 "generic_missions","Missions","Misiones",
 "generic_settings","Settings","Ajustes",
+
+"login_start","Touch the screen to start!","¡Toca la pantalla para empezar!",
+"login_transfer","Transfer","Transferir",
+"login_menu","Menu","Menú",
 
 "main_characters","Characters","Personajes",
 "main_souls","Souls","Almas",
@@ -31,4 +36,4 @@
 "char_mdef","Mag. Def","Def. Mag",
 "char_description","Description","Descripción",
 
-"?","WIP...","WIP..."
+"?","WIP...","WIP...",
