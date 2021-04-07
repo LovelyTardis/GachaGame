@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Curar
   Description: Cura a alguien (incluso a ti)
-  Cost: 10
+  Cost: 0
   SkillValue: 10
   SkillsFather: {fileID: 6870498649522083001, guid: f99d8459010a73f4b95a37f4a242b0ad,
     type: 3}
+  team: 0
+  targetType: 0
   type: 0

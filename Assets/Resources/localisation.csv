@@ -1,20 +1,25 @@
 "key","en","es",
 
+// generic keys
 "generic_yes","Yes","Si",
 "generic_no","No","No",
-"generic_accept","Ok!","Vale!",
+"generic_accept","Ok!","Â¡Vale!",
 "generic_back","Back","Volver",
 "generic_level","Lv.","Nv.",
 "generic_level_long","Level","Nivel",
 "generic_rewards","Rewards","Premios",
-"generic_news","News","Notícias",
+"generic_news","News","NotÃ­cias",
 "generic_missions","Missions","Misiones",
 "generic_settings","Settings","Ajustes",
+"generic_all","All","Todos",
+"generic_sortBy","Sort by:","Ordenar por:",
 
-"login_start","Touch the screen to start!","¡Toca la pantalla para empezar!",
+// login scene keys 
+"login_start","Touch the screen to start!","Â¡Toca la pantalla para empezar!",
 "login_transfer","Transfer","Transferir",
-"login_menu","Menu","Menú",
+"login_menu","Menu","MenÃº",
 
+// main menu keys
 "main_characters","Characters","Personajes",
 "main_souls","Souls","Almas",
 "main_home","Home","Inicio",
@@ -22,18 +27,29 @@
 "main_shop","Shop","Tienda",
 "main_social","Social","Social",
 
+// level up keys
 "levelup_leveltext","Level","Nivel",
-"levelup_title","Level up!","Subes de nivel!",
-"levelup_ap","Max AP","AP máx",
+"levelup_title","Level up!","Â¡Subes de nivel!",
+"levelup_ap","Max AP","AP mÃ¡x",
 
+// home panel keys
 "home_events","Events","Eventos",
 "home_play","Play","Jugar",
 
+// character keys
+"char_locked","Locked Characters","Personajes bloqueados",
+"char_unlocked","Unlocked Characters","Personajes desbloqueados",
 "char_hp","HP","Vida",
 "char_atk","Atk","Atq",
 "char_mag","Mag","Mag",
-"char_pdef","Phi. Def","Def. Fis",
-"char_mdef","Mag. Def","Def. Mag",
-"char_description","Description","Descripción",
+"char_pdef","P. Def","Def. FÃ­s",
+"char_mdef","M. Def","Def. Mag",
+"char_description","Description","DescripciÃ³n",
+
+// class keys
+"class_fighter","Fighters","Luchadores",
+"class_mage","Mages","Hechiceros",
+"class_healer","Healers","Sanadores",
+"class_tank","Tanks","Tanques",
 
 "?","WIP...","WIP...",

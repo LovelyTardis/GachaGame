@@ -11,7 +11,7 @@ public class UIStarControler : MonoBehaviour
     public Sprite ActiveStar;
     public Sprite UnactiveStar;
     
-    public SlotCharacter CharacterLvl;
+    public UISlotCharacter CharacterLvl;
     private int _lvl;
 
     private void Start()

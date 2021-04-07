@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//UISLOTCHARACTER
 public class SlotCharacter : MonoBehaviour
 {
     public Image slotImage;
@@ -52,6 +52,14 @@ public class SlotCharacter : MonoBehaviour
         else
         {
             slotImage.color = Color.white;
+        }
+    }
+
+    public void OnClick()
+    {
+        if (character.unlocked)
+        {
+            
         }
     }
 }

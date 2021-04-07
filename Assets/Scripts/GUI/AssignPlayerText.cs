@@ -12,9 +12,9 @@ public class AssignPlayerText : MonoBehaviour
     private TMP_Text tmpText;
     private void Start()
     {
-        tmpText = gameObject.GetComponent<TMP_Text>();
+        tmpText = GetComponent<TMP_Text>();
     }
-    void Update()
+    void Update() // no debería ser un update
     {
         switch(text)
         {
@@ -55,7 +55,6 @@ public class AssignPlayerText : MonoBehaviour
     {
         if (playerData.p_ap > playerData.p_maxAp)
         {
-            //tmpText.color = new Vector4(0, 0, 0, 255);
             tmpText.color = new Vector4(0, 170, 255, 255);
         }
         else

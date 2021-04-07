@@ -1,38 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BattleSlot : MonoBehaviour
+namespace Battle
 {
-    public float hp, atk, mag, defAtk, defMag, spd;
-    public int stars;
-    public Image cImage;
-    public Character ch;
-    private void Start()
+    public class BattleSlot : MonoBehaviour
     {
-        if (ch != null)
-            InitializeStats();
-    }
-    private void InitializeStats()
-    {
-        stars = ch.charStars;
-        hp = ch.hp;
-        atk = ch.atk;
-        mag = ch.mag;
-        defAtk = ch.defAtk;
-        defMag = ch.defMag;
-        spd = ch.spd;
-        cImage.sprite = ch.charImage;
-    }
-    public void ButtonEffect(int ability)
-    {
-        switch (ability)
+        public Image cImage;
+        public Character ch;
+        public static int lastSkillUsed = 0;
+        public static string path = "";
+        public List<Button> habButtons;
+        public bool used = false;
+        public void LoadSlot()
         {
-            case 1: ch.skills[0].SkillsFather.Effect(); break;
-            case 2: ch.skills[1].SkillsFather.Effect(); break;
-            case 3: ch.skills[2].SkillsFather.Effect(); break;
-            case 4: ch.skills[3].SkillsFather.Effect(); break;
+            if (ch != null)
+                ch.LoadUICharacter(this);
+        }
+        public void ButtonEffect(int ability)
+        {
+            lastSkillUsed = ability;
+            path = "Characters/" +ch.charName;
+            Debug.Log("Skill Used: "+lastSkillUsed+ ", FilePath: "+path);
+        }
+        public void SwapButtons(bool value)
+        {
+            foreach (Button btn in habButtons)
+            {
+                btn.interactable = value;
+            }
         }
     }
 }

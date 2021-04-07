@@ -10,7 +10,24 @@ public class LocalisationSystem
         Spanish
     }
 
-    public static Language language = Language.English;
+    public static Language language;
+    public static void SetLanguage(int value)
+    {
+        bool allOk = true;
+        switch (value)
+        {
+            case 0:
+                language = Language.English;
+                break;
+            case 1:
+                language = Language.Spanish;
+                break;
+            default:
+                allOk = false;
+                break;
+        }
+        if (allOk) { SettingsManager.Instance.LanguageValue = value; }
+    }
 
     private static Dictionary<string, string> localisedEN;
     private static Dictionary<string, string> localisedES;
@@ -33,12 +50,12 @@ public class LocalisationSystem
 
         string value = key;
 
-        switch(language)
+        switch(SettingsManager.Instance.LanguageValue)
         {
-            case Language.English:
+            case 0:
                 localisedEN.TryGetValue(key, out value);
                 break;
-            case Language.Spanish:
+            case 1:
                 localisedES.TryGetValue(key, out value);
                 break;
         }

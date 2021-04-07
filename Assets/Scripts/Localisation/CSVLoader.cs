@@ -6,8 +6,6 @@ using UnityEngine;
 public class CSVLoader : MonoBehaviour
 {
     public static CSVLoader csv;
-    public enum languageSelect { Spanish, English };
-    public languageSelect languageSelected;
     private TextAsset csvFile;
     private char lineSeparator = '\n';
     private char surround = '"';
@@ -16,15 +14,6 @@ public class CSVLoader : MonoBehaviour
     private void Awake()
     {
         if (csv == null) { csv = GameObject.Find("Localiser").GetComponent<CSVLoader>(); }
-        switch(languageSelected)
-        {
-            case languageSelect.English:
-                LocalisationSystem.language = LocalisationSystem.Language.English;
-                break;
-            case languageSelect.Spanish:
-                LocalisationSystem.language = LocalisationSystem.Language.Spanish;
-                break;
-        }
     }
     public void LoadCSV()
     {

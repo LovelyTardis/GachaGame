@@ -8,6 +8,8 @@ public class SkillObject : ScriptableObject
     public int Cost;
     public float SkillValue;
     public SkillsFather SkillsFather;
-    public enum Type{Active, Passive, Battlecry};
-    public Type type;
+    public enum Team{Allies, Enemies};
+    public Team team;
+    public enum TargetType{Single,Multi};
+    public TargetType targetType;
 }

@@ -82,7 +82,7 @@ public class CharacterPull : GachaSystem
         for (int x = 0; x < nOfPulls; x++)
         {
             float pullRate = Random.Range(0f,100f);
-            Debug.Log(pullRate);
+            //Debug.Log(pullRate);
             if ((g3s && nOfPulls == 10) ||pullRate >= 0f && pullRate <= rate3Star)  //WHEN 3* IS PULLED
             {
                 pullRate = Random.Range(0f,1f);
@@ -110,4 +110,6 @@ public class CharacterPull : GachaSystem
         Character ch = listChar[Random.Range(0, listChar.Count)];
         return ch;
     }
+    
+    
 }

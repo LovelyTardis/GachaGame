@@ -18,4 +18,5 @@ MonoBehaviour:
   SkillValue: 12
   SkillsFather: {fileID: 1861774254099149714, guid: 071266e876facdd4c93b9b86da79d073,
     type: 3}
-  type: 0
+  team: 1
+  targetType: 0

@@ -2,10 +2,9 @@
 
 public class Terratemblor : SkillsFather
 {
-    public override void Effect()
+    public override void Effect(InBattle character)
     {
-        value = SkillData.SkillValue;
-        string text = SkillData.Name + ", " + value;
+        string text = SkillData.Name + ", " + SkillData.SkillValue;
         Debug.Log(text);
     }
 }
